@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/home.css">
 </head>
+
 <body>
     <nav id="navbar">
-        <div class="navbar_logo">
+        <a href="#" class="navbar_logo">
             <img src="img/logo.png" alt="logo">
-        </div>
+        </a>
         <ul class="navbar_menu">
             <li class="navbar_menu_item">new</li>
             <li class="navbar_menu_item">best</li>
@@ -49,107 +52,136 @@
     <section class="contents">
         <div class="main-benner">
             <a href="#">
-                <div class="benner_img"></div>
+                <img src="img/benner.png" alt="" class="benner_img">
             </a>
         </div>
         <div class="new">
             <h2 class="content_title">new products</h2>
-            <div class="new_item">
-                <a href="#" class="item_img">
-                    <img src="img/item1.png" alt="">
-                </a>
-                <a href="#" class="item_title">[TOP] DEINT WOOL BOUCLE BUTTON COLLAR KNIT</a>
-                <p class="item_info">
-                    <span class="discount-rate">5%</span>
-                    <span class="item_before-price">31,000</span>
-                    <span class="item_after-price">29,400 won</span>
-                </p>
+            <div class="new_items">
+                <div class="new_item">
+                    <a href="#" class="item_img">
+                        <img src="img/item1.png" alt="">
+                    </a>
+                    <div class="item_descript">
+                        <a href="#" class="item_title">[TOP] DEINT WOOL BOUCLE BUTTON COLLAR KNIT</a>
+                        <p class="item_info">
+                            <span class="discount-rate">5%</span>
+                            <span class="item_before-price">31,000</span>
+                            <span class="item_after-price">29,400 won</span>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="new_item">
+                    <a href="#" class="item_img">
+                        <img src="img/item2.png" alt="">
+                    </a>
+                    <div class="item_descript">
+                        <a href="#" class="item_title">[TOP] SODE SET-UP BANDING WRAP BLOUSE</a>
+                        <p class="item_info">
+                            <span class="discount-rate">5%</span>
+                            <span class="item_before-price">36,000</span>
+                            <span class="item_after-price">34,200 won</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="new_item">
+                    <a href="#" class="item_img">
+                        <img src="img/item3.png" alt="">
+                    </a>
+                    <div class="item_descript">
+                        <a href="#" class="item_title">[OUTER] CORON BOLERO KNIT CARDIGAN SET</a>
+                        <p class="item_info">
+                            <span class="discount-rate">5%</span>
+                            <span class="item_before-price">53,000</span>
+                            <span class="item_after-price">50,300 won</span>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="new_item">
+                    <a href="#" class="item_img">
+                        <img src="img/item4.png" alt="">
+                    </a>
+                    <div class="item_descript">
+                        <a href="#" class="item_title">[TOP] HONELL LACE HALF NECK BLOUSE</a>
+                        <p class="item_info">
+                            <span class="discount-rate">5%</span>
+                            <span class="item_before-price">41,000</span>
+                            <span class="item_after-price">38,900 won</span>
+                        </p>
+                    </div>
+
+                </div>
             </div>
-            <div class="new_item">
-                <a href="#" class="item_img">
-                    <img src="img/item2.png" alt="">
-                </a>
-                <a href="#" class="item_title">[TOP] SODE SET-UP BANDING WRAP BLOUSE</a>
-                <p class="item_info">
-                    <span class="discount-rate">5%</span>
-                    <span class="item_before-price">36,000</span>
-                    <span class="item_after-price">34,200 won</span>
-                </p>
-            </div>
-            <div class="new_item">
-                <a href="#" class="item_img">
-                    <img src="img/item3.png" alt="">
-                </a>
-                <a href="#" class="item_title">[OUTER] CORON BOLERO KNIT CARDIGAN SET</a>
-                <p class="item_info">
-                    <span class="discount-rate">5%</span>
-                    <span class="item_before-price">53,000</span>
-                    <span class="item_after-price">50,300 won</span>
-                </p>
-            </div>
-            <div class="new_item">
-                <a href="#" class="item_img">
-                    <img src="img/item4.png" alt="">
-                </a>
-                <a href="#" class="item_title">[TOP] HONELL LACE HALF NECK BLOUSE</a>
-                <p class="item_info">
-                    <span class="discount-rate">5%</span>
-                    <span class="item_before-price">41,000</span>
-                    <span class="item_after-price">38,900 won</span>
-                </p>
-            </div>
-            <div class="new_btn">
+
+            <div class="more_btn">
                 <i class="fa-solid fa-ellipsis"></i>
                 <span>more</span>
             </div>
         </div>
         <div class="best">
             <h2 class="content_title">best products</h2>
-            <div class="best_item">
-                <a href="#" class="item_img">
-                    <img src="img/item1.png" alt="">
-                </a>
-                <a href="#" class="item_title">[TOP] DEINT WOOL BOUCLE BUTTON COLLAR KNIT</a>
-                <p class="item_info">
-                    <span class="discount-rate">5%</span>
-                    <span class="item_before-price">31,000</span>
-                    <span class="item_after-price">29,400 won</span>
-                </p>
+            <div class="best_items">
+                <div class="best_item">
+                    <a href="#" class="item_img">
+                        <img src="img/item1.png" alt="">
+                    </a>
+                    <div class="item_descript">
+                        <a href="#" class="item_title">[TOP] DEINT WOOL BOUCLE BUTTON COLLAR KNIT</a>
+                        <p class="item_info">
+                            <span class="discount-rate">5%</span>
+                            <span class="item_before-price">31,000</span>
+                            <span class="item_after-price">29,400 won</span>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="best_item">
+                    <a href="#" class="item_img">
+                        <img src="img/item2.png" alt="">
+                    </a>
+                    <div class="item_descript">
+                        <a href="#" class="item_title">[TOP] SODE SET-UP BANDING WRAP BLOUSE</a>
+                        <p class="item_info">
+                            <span class="discount-rate">5%</span>
+                            <span class="item_before-price">36,000</span>
+                            <span class="item_after-price">34,200 won</span>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="best_item">
+                    <a href="#" class="item_img">
+                        <img src="img/item3.png" alt="">
+                    </a>
+                    <div class="item_descript">
+                        <a href="#" class="item_title">[OUTER] CORON BOLERO KNIT CARDIGAN SET</a>
+                        <p class="item_info">
+                            <span class="discount-rate">5%</span>
+                            <span class="item_before-price">53,000</span>
+                            <span class="item_after-price">50,300 won</span>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="best_item">
+                    <a href="#" class="item_img">
+                        <img src="img/item4.png" alt="">
+                    </a>
+                    <div class="item_descript">
+                        <a href="#" class="item_title">[TOP] HONELL LACE HALF NECK BLOUSE</a>
+                        <p class="item_info">
+                            <span class="discount-rate">5%</span>
+                            <span class="item_before-price">41,000</span>
+                            <span class="item_after-price">38,900 won</span>
+                        </p>
+                    </div>
+
+                </div>
             </div>
-            <div class="best_item">
-                <a href="#" class="item_img">
-                    <img src="img/item2.png" alt="">
-                </a>
-                <a href="#" class="item_title">[TOP] SODE SET-UP BANDING WRAP BLOUSE</a>
-                <p class="item_info">
-                    <span class="discount-rate">5%</span>
-                    <span class="item_before-price">36,000</span>
-                    <span class="item_after-price">34,200 won</span>
-                </p>
-            </div>
-            <div class="best_item">
-                <a href="#" class="item_img">
-                    <img src="img/item3.png" alt="">
-                </a>
-                <a href="#" class="item_title">[OUTER] CORON BOLERO KNIT CARDIGAN SET</a>
-                <p class="item_info">
-                    <span class="discount-rate">5%</span>
-                    <span class="item_before-price">53,000</span>
-                    <span class="item_after-price">50,300 won</span>
-                </p>
-            </div>
-            <div class="best_item">
-                <a href="#" class="item_img">
-                    <img src="img/item4.png" alt="">
-                </a>
-                <a href="#" class="item_title">[TOP] HONELL LACE HALF NECK BLOUSE</a>
-                <p class="item_info">
-                    <span class="discount-rate">5%</span>
-                    <span class="item_before-price">41,000</span>
-                    <span class="item_after-price">38,900 won</span>
-                </p>
-            </div>
-            <div class="best_btn">
+
+            <div class="more_btn">
                 <i class="fa-solid fa-ellipsis"></i>
                 <span>more</span>
             </div>
@@ -157,49 +189,188 @@
         <div class="recomend">
             <h2 class="content_title">md choice</h2>
             <i class="fa-solid fa-chevron-left"></i>
-            <div class="recomend_item">
-                <a href="#" class="item_img">
-                    <img src="img/item5.png" alt="">
-                </a>
-                <dl>
-                    <dt class="item_en-title">usual v neck unbal slit knit</dt>
-                    <dt class="item_ko-title">유주얼V넥 언발 슬릿 니트</dt>
-                </dl>
+            <div class="recommend_items">
+                <div class="recomend_item">
+                    <a href="#" class="item_img">
+                        <img src="img/item5.png" alt="">
+                        <dl>
+                            <dt class="item_en-title">usual v neck unbal slit knit</dt>
+                            <dt class="item_ko-title">유주얼V넥 언발 슬릿 니트</dt>
+                        </dl>
+                    </a>
+
+                </div>
+                <div class="recomend_item">
+                    <a href="#" class="item_img">
+                        <img src="img/item6.png" alt="">
+                        <dl>
+                            <dt class="item_en-title">frian no collar tweed jacket</dt>
+                            <dt class="item_ko-title">프리안 노 카라 트위드 자켓</dt>
+                        </dl>
+                    </a>
+
+                </div>
+                <div class="recomend_item">
+                    <a href="#" class="item_img">
+                        <img src="img/item7.png" alt="">
+                        <dl>
+                            <dt class="item_en-title">moit layered sleeveless long ops</dt>
+                            <dt class="item_ko-title">모잇 레이어드 슬리브리스 롱 원피스</dt>
+                        </dl>
+                    </a>
+
+                </div>
+                <div class="recomend_item">
+                    <a href="#" class="item_img">
+                        <img src="img/item8.png" alt="">
+                        <dl>
+                            <dt class="item_en-title">blush peach wide cotton pants</dt>
+                            <dt class="item_ko-title">블러시 피치 와이드 코튼 팬츠</dt>
+                        </dl>
+                    </a>
+
+                </div>
             </div>
-            <div class="recomend_item">
-                <a href="#" class="item_img">
-                    <img src="img/item6.png" alt="">
-                </a>
-                <dl>
-                    <dt class="item_en-title">frian no collar tweed jacket</dt>
-                    <dt class="item_ko-title">프리안 노 카라 트위드 자켓</dt>
-                </dl>
-            </div>
-            <div class="recomend_item">
-                <a href="#" class="item_img">
-                    <img src="img/item7.png" alt="">
-                </a>
-                <dl>
-                    <dt class="item_en-title">moit layered sleeveless long ops</dt>
-                    <dt class="item_ko-title">모잇 레이어드 슬리브리스 롱 원피스</dt>
-                </dl>
-            </div>
-            <div class="recomend_item">
-                <a href="#" class="item_img">
-                    <img src="img/item8.png" alt="">
-                </a>
-                <dl>
-                    <dt class="item_en-title">blush peach wide cotton pants</dt>
-                    <dt class="item_ko-title">블러시 피치 와이드 코튼 팬츠</dt>
-                </dl>
-            </div>
+
             <i class="fa-solid fa-chevron-right"></i>
+
+        </div>
+        <div class="review">
+            <h2 class="content_title">reviewer's pick</h2>
+            <div class="review_items">
+                <div class="review_item">
+                    <a href="#" class="item_img">
+                        <span>review 534</span>
+                        <img src="img/item9.png" alt="">
+                    </a>
+                    <div class="item_descript">
+                        <a href="#" class="item_title">[TOP] ROSEL BASIC HIGH NECK T</a>
+                        <p class="item_info">
+                            <span class="discount-rate">20%</span>
+                            <span class="item_before-price">12,000</span>
+                            <span class="item_after-price">9,600 won</span>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="review_item">
+                    <a href="#" class="item_img">
+                        <span>review 268</span>
+                        <img src="img/item10.png" alt="">
+                    </a>
+                    <div class="item_descript">
+                        <a href="#" class="item_title">[OUTER] SOFF WOOL 60% ARGYLE KNIT VEST</a>
+                        <p class="item_info">
+                            <span class="discount-rate">10%</span>
+                            <span class="item_before-price">26,000</span>
+                            <span class="item_after-price">23,400 won</span>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="review_item">
+                    <a href="#" class="item_img">
+                        <span>review 128</span>
+                        <img src="img/item11.png" alt="">
+                    </a>
+                    <div class="item_descript">
+                        <a href="#" class="item_title">[TOP] PEDEN CASH WOOL LOOSE FIT KNIT</a>
+                        <p class="item_info">
+                            <span class="discount-rate">10%</span>
+                            <span class="item_before-price">18,000</span>
+                            <span class="item_after-price">16,200 won</span>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="review_item">
+                    <a href="#" class="item_img">
+                        <span>review 60</span>
+                        <img src="img/item12.png" alt="">
+                    </a>
+                    <div class="item_descript">
+                        <a href="#" class="item_title">[TOP] JELLY BASIC RAYON HALF NECK T</a>
+                        <p class="item_info">
+                            <span class="discount-rate">10%</span>
+                            <span class="item_before-price">12,000</span>
+                            <span class="item_after-price">10,800 won</span>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
 
     </section>
     <footer>
-        
+        <div class="info">
+            <img src="img/logo.png" alt="logo">
+            <div class="info_1">
+                <div class="name">
+                    <span>TRADE NAME 봄샵</span>
+                    <span>MADE BY BOM</span>
+                </div>
+                <span>CALL 010-9964-2461</span>
+                <span>ADDRESS 경기광주 초월읍</span>
+                <span>E-MAIL rlaqhal318@gmail.com</span>
+                <span>GITHUB https://github.com/bom318</span>
+                <span>BLOG https://bombomi.tistory.com/</span>
+            </div>
+            <div class="info_2">
+                <span>
+                    html5, css, javaScript, Springboot, h2 등을 이용해 구현한 쇼핑몰입니다.
+                </span>
+                <span>
+                    쇼핑몰 '커먼유니크'의 디자인을 참고해 만들었습니다.
+                </span>
+            </div>
+        </div>
+        <div class="service">
+            <span class="footer_title">customer service</span>
+            <span class="service_num">
+                1688-0000
+            </span>
+            <span class="service_time">am10:00 - pm5:00 mon-fri</span>
+            <span class="service_time">lunch pm1:00 - 2:00</span>
+        </div>
+        <div class="bank">
+            <span class="footer_title">bank account</span>
+            <span>농협 000-0000-0000-00</span>
+            <span>국민 000000-00-000000</span>
+            <span>(주)봄쇼핑</span>
+        </div>
+        <div class="regal">
+            <span class="footer_title">regal</span>
+            <a href="#">about company</a>
+            <a href="#">terms of use</a>
+            <a href="#">user guide</a>
+            <a href="#">개인정보처리방침</a>
+        </div>
+        <div class="sns">
+            <span class="footer_title">official sns</span>
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+                <span>facebook</span>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@BomShop_official</span>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@BomShop_store</span>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@BomShop_lookbook</span>
+            </a>
+        </div>
     </footer>
+    <!-- Arrow -->
+    <button class="arrow-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 </body>
+
 </html>
