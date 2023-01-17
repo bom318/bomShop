@@ -1,0 +1,235 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom Shop</title>
+    <meta name="description" content="개인 포트폴리오 웹사이트입니다">
+    <meta name="author" content="Bomi">
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
+    <script src="https://kit.fontawesome.com/8d62fb13e2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/cmjoin.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="#" class="navbar_logo">
+            <img src="img/logo.png" alt="logo">
+        </a>
+        <ul class="navbar_menu">
+            <li class="navbar_menu_item">new</li>
+            <li class="navbar_menu_item">best</li>
+            <li class="navbar_menu_item">outer</li>
+            <li class="navbar_menu_item">knit&cardigan</li>
+            <li class="navbar_menu_item">shirt&blouse</li>
+            <li class="navbar_menu_item">top</li>
+            <li class="navbar_menu_item">ops</li>
+            <li class="navbar_menu_item">pants</li>
+            <li class="navbar_menu_item">skirt</li>
+            <li class="navbar_menu_item">bag</li>
+            <li class="navbar_menu_item">shoes</li>
+            <li class="navbar_menu_item">acc</li>
+        </ul>
+        <div class="navbar_utill">
+            <a href="#" class="navbar_utill_login">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="#" class="navbar_utill_cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart_count">2</span>
+            </a>
+            <a href="#" class="navbar_utill_search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <div class="navbar_utill_list">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="contents">
+        <h2>회원가입</h2>
+        <form action="#" method="post">
+            <div class="info">
+                <div class="title">
+                    <h3>기본정보</h3>
+                    <span><img src="./img/ico_required_blue.gif" alt="required">필수입력사항</span>
+                </div>
+                <div class="id">
+                    <label for="id">아이디<img src="./img/ico_required_blue.gif" alt="required"></label>
+                    <input name="id" type="text">
+                    <span>(영문소문자/숫자, 4~16자)</span>
+                </div>
+                <div class="pw">
+                    <label for="pw">비밀번호<img src="./img/ico_required_blue.gif" alt="required"></label>
+                    <input type="password" name="pw">
+                    <span>(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)</span>
+                </div>
+                <div class="checkPw">
+                    <label for="checkPw">비밀번호 확인<img src="./img/ico_required_blue.gif" alt="required"></label>
+                    <input type="password" name="checkPw">
+                </div>
+                <div class="name">
+                    <label for="name">이름<img src="./img/ico_required_blue.gif" alt="required"></label>
+                    <input type="text" name="name">
+                </div>
+                <div class="addr">
+                    <label>주소<img src="./img/ico_required_blue.gif" alt="required"></label>
+                    <div class="addrInput">
+                        <div class="post">
+                            <input type="text" class="postNum" name="postNum" placeholder="우편번호">
+                            <input type="button" class="findPost" name="findPost" value="주소검색">
+                        </div>
+                        <input type="text" class="addr1" name="addr1" placeholder="기본주소">
+                        <input type="text" class="addr2" name="addr2" placeholder="나머지 주소">
+                    </div>
+
+                </div>
+                <div class="phone">
+                    <label>일반전화</label>
+                    <div class="phoneInput">
+                        <select name="phone1" id="phone1">
+                            <option value="02">02</option>
+                            <option value="031">031</option>
+                            <option value="032">032</option>
+                            <option value="033">033</option>
+                            <option value="041">041</option>
+                            <option value="042">042</option>
+                            <option value="043">043</option>
+                            <option value="044">044</option>
+                            <option value="051">051</option>
+                            <option value="052">052</option>
+                            <option value="053">053</option>
+                            <option value="054">054</option>
+                            <option value="055">055</option>
+                            <option value="061">061</option>
+                            <option value="062">062</option>
+                            <option value="063">063</option>
+                            <option value="064">064</option>
+                            <option value="070">070</option>
+                        </select>
+                        <span>-</span>
+                        <input type="text" name="phone2">
+                        <span>-</span>
+                        <input type="text" name="phone3">
+                    </div>
+                </div>
+
+                <div class="mobile">
+                    <label>휴대전화<img src="./img/ico_required_blue.gif" alt="required"></label>
+                    <div class="mobileInput">
+                        <select name="moblie1" id="moblie1">
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="018">018</option>
+                            <option value="019">019</option>
+                        </select>
+                        <span>-</span>
+                        <input type="text" name="mobile2">
+                        <span>-</span>
+                        <input type="text" name="mobile3">
+                    </div>
+                </div>
+
+                <div class="email">
+                    <label for="email">이메일주소<img src="./img/ico_required_blue.gif" alt="required"></label>
+                    <input type="text" name="email">
+                </div>
+            </div>
+            <div class="info2">
+                <div class="title">
+                    <h3>추가정보</h3>
+                </div>
+                <div class="birth">
+                    <label>생년월일<img src="./img/ico_required_blue.gif" alt="required"></label>
+                    
+                    <input type="text" name="birth1">
+                    <span>년</span>
+                    <input type="text" name="birth2">
+                    <span>월</span>
+                    <input type="text" name="birth3">
+                    <span>일</span>
+                </div>
+            </div>
+            <div class="btn">
+                <button type="submit">회원가입</button>
+            </div>
+            
+        </form>
+
+    </section>
+    <footer>
+        <div class="info">
+            <img src="img/logo.png" alt="logo">
+            <div class="info_1">
+                <div class="name">
+                    <span>TRADE NAME 봄샵</span>
+                    <span>MADE BY BOM</span>
+                </div>
+                <span>CALL 010-9964-2461</span>
+                <span>ADDRESS 경기광주 초월읍</span>
+                <span>E-MAIL rlaqhal318@gmail.com</span>
+                <span>GITHUB https://github.com/bom318</span>
+                <span>BLOG https://bombomi.tistory.com/</span>
+            </div>
+            <div class="info_2">
+                <span>
+                    html5, css, javaScript, Springboot, h2 등을 이용해 구현한 쇼핑몰입니다.
+                </span>
+                <span>
+                    쇼핑몰 '커먼유니크'의 디자인을 참고해 만들었습니다.
+                </span>
+            </div>
+        </div>
+        <div class="service">
+            <span class="footer_title">customer service</span>
+            <span class="service_num">
+                1688-0000
+            </span>
+            <span class="service_time">am10:00 - pm5:00 mon-fri</span>
+            <span class="service_time">lunch pm1:00 - 2:00</span>
+        </div>
+        <div class="bank">
+            <span class="footer_title">bank account</span>
+            <span>농협 000-0000-0000-00</span>
+            <span>국민 000000-00-000000</span>
+            <span>(주)봄쇼핑</span>
+        </div>
+        <div class="regal">
+            <span class="footer_title">regal</span>
+            <a href="#">about company</a>
+            <a href="#">terms of use</a>
+            <a href="#">user guide</a>
+            <a href="#">개인정보처리방침</a>
+        </div>
+        <div class="sns">
+            <span class="footer_title">official sns</span>
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+                <span>facebook</span>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@BomShop_official</span>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@BomShop_store</span>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@BomShop_lookbook</span>
+            </a>
+        </div>
+    </footer>
+    <!-- arrow -->
+    <button class="arrow-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+</body>
+
+</html>
