@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/cmjoin.css">
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="./scr/cmjoin.js" defer></script>
 </head>
 
 <body>
@@ -79,10 +81,10 @@
                     <label>주소<img src="./img/ico_required_blue.gif" alt="required"></label>
                     <div class="addrInput">
                         <div class="post">
-                            <input type="text" class="postNum" name="postNum" placeholder="우편번호">
+                            <input type="text" class="postNum" name="postNum" placeholder="우편번호" readonly>
                             <input type="button" class="findPost" name="findPost" value="주소검색">
                         </div>
-                        <input type="text" class="addr1" name="addr1" placeholder="기본주소">
+                        <input type="text" class="addr1" name="addr1" placeholder="기본주소" readonly>
                         <input type="text" class="addr2" name="addr2" placeholder="나머지 주소">
                     </div>
 
