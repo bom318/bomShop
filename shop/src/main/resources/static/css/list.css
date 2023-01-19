@@ -150,12 +150,12 @@ p {
 .title {
     margin-bottom: 50px;
 }
-.new_items{
+.new_items, .best_items{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.new_item{
+.new_item, .best_item{
     width: 25%;
     margin-bottom: 100px;
 }
@@ -181,6 +181,14 @@ p {
 .item_before-price {
     text-decoration: line-through;
     margin-right: 5px;
+}
+.item_price {
+    font-weight: var(--weight-semi-bold);
+    display: block;
+    margin-top: 20px;
+}
+.review {
+    color: var(--color-light-grey);
 }
 .paging {
     text-align: center;
