@@ -86,11 +86,11 @@
                 </span>
                 <div class="price-color">
                     <div class="price">
-                        <span>price</span>
+                        <span class="price_title">price</span>
                         <span>96,000 won</span>
                     </div>
                     <div class="color">
-                        <span>color</span>
+                        <span class="color_title">color</span>
                         <select name="color" id="color">
                             <option value="*">- [필수] COLOR 선택 -</option>
                             <option value="**">-------------------</option>
@@ -103,13 +103,18 @@
                             <span class="choice_name">코니카 덤블 카라 하프 패딩</span>
                             <span class="choice_color">- KHAKI</span>
                         </div>
-                        <div class="choice_cnt">
-                            <input type="number">
-                            <button>x</button>
+                        <div class="choice_right">
+                            <div class="choice_cnt">
+                                <button class="num-down">-</button>
+                                <input type="text" value="1">
+                                <button class="num-up">+</button>
+                                <button class="delete-btn">x</button>
+                            </div>
+                            <div class="choice_price">
+                                <span>96,000 won</span>
+                            </div>
                         </div>
-                        <div class="choice_price">
-                            <span>96,000 won</span>
-                        </div>
+
                     </div>
                 </div>
                 <div class="total">
@@ -177,7 +182,7 @@
                             <tr>
                                 <td>안감</td>
                                 <td>있음</td>
-                                <td>없음</td>
+                                <td class="select-tb">없음</td>
                                 <td>기모 안감</td>
                                 <td>퀼팅안감</td>
                             </tr>
@@ -185,34 +190,34 @@
                                 <td>두께</td>
                                 <td>얇음</td>
                                 <td>두꺼운</td>
-                                <td>보통임</td>
+                                <td class="select-tb">보통임</td>
                                 <td>매우 두꺼움</td>
                             </tr>
                             <tr>
                                 <td>비침</td>
-                                <td>있음</td>
+                                <td class="select-tb">있음</td>
                                 <td>없음</td>
                                 <td>흰색 계열만</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>신축성</td>
-                                <td>있음</td>
+                                <td class="select-tb">있음</td>
                                 <td>약간있음</td>
                                 <td>보통임</td>
                                 <td>없음</td>
                             </tr>
                         </table>
                         <div class="info_color">
-                            <span class="info_title">COLOR</span>
+                            <span class="detail_info_title">COLOR</span>
                             <span>KHAKI,CREAM</span>
                         </div>
                         <div class="info_fabric">
-                            <span class="info_title">FABRIC</span>
+                            <span class="detail_info_title">FABRIC</span>
                             <span>NYLON 100%</span>
                         </div>
                         <div class="info_model">
-                            <span class="info_title">MODEL</span>
+                            <span class="detail_info_title">MODEL</span>
                             <span>163cm 상의44 하의26 / CREAM 착용</span>
                         </div>
                     </div>
@@ -356,8 +361,8 @@
                 </div>
             </div>
             <div class="review_filter">
-                <span>최신순</span>
-                <span>별점순</span>
+                <span class="filter_new select">최신순</span>
+                <span class="filter_star">별점순</span>
             </div>
             <div class="review">
                 <div class="review_left">
@@ -376,7 +381,7 @@
                         <img src="./img/review1.jpg" alt="">
                         <img src="./img/review2.jpg" alt="">
                     </div>
-                    <span>댓글 1 <i class="fa-solid fa-chevron-down"></i></span>
+                    <span class="show_re">댓글 1 <i class="fa-solid fa-chevron-down"></i></span>
                     <div class="review_reples">
                         <div class="review_re">
                             <span class="re_writer">봄봄</span>
@@ -386,15 +391,15 @@
                             </p>
                         </div>
                         <form action="#" method="post">
-                            <input type="text" placeholder="댓글을 작성해 주세요." name="re_content">
-                            <button type="submit">작성</button>
+                            <input type="text" class="reInput" placeholder="댓글을 작성해 주세요." name="re_content">
+                            <button type="submit" class="writeRe_btn">작성</button>
                         </form>
                     </div>
                 </div>
                 <div class="review_right">
                     <span class="review_writer">
-                        kim***님의 리뷰입니다.
-                    </span>
+                        kim***
+                    </span>님의 리뷰입니다.
                     <div class="r_stature">
                         <span>키</span>
                         <span class="review_stature">160cm</span>
