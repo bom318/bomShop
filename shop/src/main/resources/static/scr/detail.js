@@ -4,7 +4,9 @@
 const color = document.querySelector('#color');
 const priceDiv = document.querySelector('.price-color');
 const infoTitle = document.querySelector('.info_title');
-const itemPrice = document.querySelector('.itemPrice');
+let itemPrice = document.querySelector('.itemPrice').innerText;
+let totalPrice = parseInt(document.querySelector('.total_price').innerText);
+// let total = parseInt(document.querySelector('.total_price').innerText);
 
 
 color.addEventListener('change', () => {
@@ -43,7 +45,7 @@ color.addEventListener('change', () => {
             input.classList.add(`${color.value}_quantity`);
             input.type = 'text';
             input.value = '1';
-            input.setAttribute('oninput',`this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\\..*)\\./g, '$1');`)
+            input.setAttribute('oninput', `this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\\..*)\\./g, '$1');`)
             choiceCnt.appendChild(input);
             const numUp = document.createElement('button');
             numUp.classList.add('num-up');
@@ -53,14 +55,17 @@ color.addEventListener('change', () => {
             const deleteBtn = document.createElement('button');
             deleteBtn.classList.add('delete-btn');
             deleteBtn.innerText = 'x';
-            deleteBtn.setAttribute('onclick',`deleteOption('${color.value}')`);
+            deleteBtn.setAttribute('onclick', `deleteOption('${color.value}')`);
             choiceCnt.appendChild(deleteBtn);
             const choicePrice = document.createElement('div');
+            choicePrice.classList.add(`choice_price_${color.value}`);
             choicePrice.classList.add('choice_price');
             choiceRight.appendChild(choicePrice);
             const span = document.createElement('span');
-            span.innerText = itemPrice.innerText + ' won';
+            span.innerText = itemPrice + ' won';
             choicePrice.appendChild(span);
+            //total 가격 바꾸기
+            changeTotal();
         }
 
     }
@@ -71,23 +76,49 @@ function decrease(color) {
     const quantity = document.querySelector(`.${color}_quantity`);
     if (quantity.value > 1) {
         quantity.value--;
+        //choice 가격 바꾸기
+        let price = parseInt(document.querySelector(`.choice_price_${color}`).innerText.replace(",", ""));
+        price -= parseInt(itemPrice.replace(",", ""));
+        let choicePrice = document.querySelector(`.choice_price_${color}`);
+        choicePrice.innerText = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') + ' won';
+        //total 가격 바꾸기
+        changeTotal();
     }
 
 }
 function increase(color) {
     const quantity = document.querySelector(`.${color}_quantity`);
     quantity.value++;
+    //choice 가격 바꾸기
+    let price = parseInt(document.querySelector(`.choice_price_${color}`).innerText.replace(",", ""));
+    price += parseInt(itemPrice.replace(",", ""));
+    let choicePrice = document.querySelector(`.choice_price_${color}`);
+    choicePrice.innerText = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') + ' won';
+    //total 가격 바꾸기
+    changeTotal();
 }
 
 // 선택상품 삭제
 function deleteOption(color) {
     document.querySelector(`.choice_${color}`).remove();
+    //total 가격 바꾸기
+    changeTotal();
+}
+//total 값 변경
+function changeTotal() {
+    let priceArr = document.querySelectorAll('.choice_price');
+    let total = 0;
+    if(priceArr.length == 0) {
+        document.querySelector('.total_price').innerText = 0;
+    }
+    for (let i = 0; i < priceArr.length; i++) {
+
+        total += parseInt(priceArr[i].innerText.replace(",", ""));
+        document.querySelector('.total_price').innerText = total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    }
 }
 
 
-
-
-// total 가격 바꾸기
 // detail menu 클릭시 해당 위치로 이동
 // review 댓글 클릭시 내용 보이기
 // q&a 제목 클릭시 내용 보이기
