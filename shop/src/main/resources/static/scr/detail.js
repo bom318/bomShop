@@ -43,6 +43,7 @@ color.addEventListener('change', () => {
             input.classList.add(`${color.value}_quantity`);
             input.type = 'text';
             input.value = '1';
+            input.setAttribute('oninput',`this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\\..*)\\./g, '$1');`)
             choiceCnt.appendChild(input);
             const numUp = document.createElement('button');
             numUp.classList.add('num-up');
@@ -83,7 +84,9 @@ function deleteOption(color) {
     document.querySelector(`.choice_${color}`).remove();
 }
 
-// 수량input 숫자만 가능하도록
+
+
+
 // total 가격 바꾸기
 // detail menu 클릭시 해당 위치로 이동
 // review 댓글 클릭시 내용 보이기
