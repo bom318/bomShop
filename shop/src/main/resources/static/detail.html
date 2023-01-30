@@ -384,19 +384,24 @@
                         <img src="./img/review1.jpg" alt="">
                         <img src="./img/review2.jpg" alt="">
                     </div>
-                    <span class="show_re">댓글 1 <i class="fa-solid fa-chevron-down"></i></span>
+                    <span class="show_re">댓글 1 <i class="fa-solid fa-chevron-down"></i><i class="none fa-solid fa-chevron-up"></i></span>
                     <div class="review_reples">
-                        <div class="review_re">
+                        <div class="reDiv">
+                            <!-- <div class="review_re">
                             <span class="re_writer">봄봄</span>
-                            <p class="re_content">
-                                안녕하세요 고객님!</br>
+                            <pre class="re_content">
+                                안녕하세요 고객님!
                                 소중한 후기 남겨주셔서 감사드립니다 :D
-                            </p>
+                            </pre>
+                        </div> -->
                         </div>
-                        <form action="#" method="post">
-                            <input type="text" class="reInput" placeholder="댓글을 작성해 주세요." name="re_content">
-                            <button type="submit" class="writeRe_btn">작성</button>
-                        </form>
+                        <div class="none formDiv">
+                            <form action="#" method="post" class="re_form">
+                                <input type="text" class="reInput" placeholder="댓글을 작성해 주세요." name="re_content">
+                                <button type="submit" class="writeRe_btn">작성</button>
+                            </form>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="review_right">

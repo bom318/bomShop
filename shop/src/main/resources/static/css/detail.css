@@ -555,6 +555,13 @@ td {
     margin: 20px 0;
     display: inline-block;
     font-size: var(--font-micro);
+    cursor: pointer;
+}
+.show_re:hover {
+    font-weight: var(--weight-semi-bold);
+}
+.none {
+    display: none;
 }
 .review_reples {
     display: flex;

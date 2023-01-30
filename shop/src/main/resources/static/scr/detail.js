@@ -143,7 +143,39 @@ qna.forEach(e => {
         scrollIntoView('.prd_question');
     })
 })
+
 // review 댓글 클릭시 내용 보이기
+const showRe = document.querySelector('.show_re');
+const down = document.querySelector('.fa-chevron-down');
+const up = document.querySelector('.fa-chevron-up');
+const reForm = document.querySelector('.formDiv');
+showRe.addEventListener('click', () => {
+    down.classList.toggle('none');
+    up.classList.toggle('none');
+    reForm.classList.toggle('none');
+    if(down.classList.contains('none')) {
+        //비동기 데이터 가져와야함
+        const reviewRe = document.createElement('div');
+        reviewRe.classList.add('review_re');
+        const reDiv = document.querySelector('.reDiv');
+        reDiv.appendChild(reviewRe);
+        const reWriter = document.createElement('span');
+        reWriter.classList.add('re_writer');
+        reviewRe.appendChild(reWriter);
+        reWriter.innerText = '봄봄';//reWriter
+        const reContent = document.createElement('pre');
+        reContent.classList.add('re_content');
+        reviewRe.appendChild(reContent);
+        reContent.innerText = '안녕하세요 고객님! 소중한 후기 남겨주셔서 감사드립니다 :D';
+
+    }else {
+        let review = document.querySelectorAll('.review_re');
+        review.forEach(e => {
+            e.remove();
+        })
+    }
+    
+})
 // q&a 제목 클릭시 내용 보이기
 
 
