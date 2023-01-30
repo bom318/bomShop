@@ -108,7 +108,7 @@ function deleteOption(color) {
 function changeTotal() {
     let priceArr = document.querySelectorAll('.choice_price');
     let total = 0;
-    if(priceArr.length == 0) {
+    if (priceArr.length == 0) {
         document.querySelector('.total_price').innerText = 0;
     }
     for (let i = 0; i < priceArr.length; i++) {
@@ -122,7 +122,7 @@ function changeTotal() {
 // detail menu 클릭시 해당 위치로 이동
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
-    scrollTo.scrollIntoView({behavior: 'smooth'});
+    scrollTo.scrollIntoView({ behavior: 'smooth' });
 };
 const detail = document.querySelectorAll('.menu_detail');
 const review = document.querySelectorAll('.menu_review');
@@ -153,7 +153,7 @@ showRe.addEventListener('click', () => {
     down.classList.toggle('none');
     up.classList.toggle('none');
     reForm.classList.toggle('none');
-    if(down.classList.contains('none')) {
+    if (down.classList.contains('none')) {
         //비동기 데이터 가져와야함
         const reviewRe = document.createElement('div');
         reviewRe.classList.add('review_re');
@@ -168,14 +168,28 @@ showRe.addEventListener('click', () => {
         reviewRe.appendChild(reContent);
         reContent.innerText = '안녕하세요 고객님! 소중한 후기 남겨주셔서 감사드립니다 :D';
 
-    }else {
+    } else {
         let review = document.querySelectorAll('.review_re');
         review.forEach(e => {
             e.remove();
         })
     }
-    
+
 })
 // q&a 제목 클릭시 내용 보이기
+const qTitle = document.querySelectorAll('.q_tit-con');
+qTitle.forEach(title => {
+    title.children[0].addEventListener('click', () => {
+        if (title.children[1] == null) {
+            //비동기 데이터 가져와야함
+            const qContent = document.createElement('div');
+            qContent.classList.add('q_content');
+            title.appendChild(qContent);
+            qContent.innerText = '사이즈가 어떻게 되나여'//q_content
+        }else {
+            title.children[1].remove();
+        }
 
+    })
+})
 
