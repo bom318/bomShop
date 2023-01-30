@@ -120,6 +120,29 @@ function changeTotal() {
 
 
 // detail menu 클릭시 해당 위치로 이동
+function scrollIntoView(selector) {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior: 'smooth'});
+};
+const detail = document.querySelectorAll('.menu_detail');
+const review = document.querySelectorAll('.menu_review');
+const qna = document.querySelectorAll('.menu_qna');
+
+detail.forEach(e => {
+    e.addEventListener('click', () => {
+        scrollIntoView('.prd-detail');
+    })
+})
+review.forEach(e => {
+    e.addEventListener('click', () => {
+        scrollIntoView('.prd_review');
+    })
+})
+qna.forEach(e => {
+    e.addEventListener('click', () => {
+        scrollIntoView('.prd_question');
+    })
+})
 // review 댓글 클릭시 내용 보이기
 // q&a 제목 클릭시 내용 보이기
 
