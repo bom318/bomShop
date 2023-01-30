@@ -1,0 +1,201 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom Shop</title>
+    <meta name="description" content="개인 포트폴리오 웹사이트입니다">
+    <meta name="author" content="Bomi">
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
+    <script src="https://kit.fontawesome.com/8d62fb13e2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="#" class="navbar_logo">
+            <img src="img/logo.png" alt="logo">
+        </a>
+        <ul class="navbar_menu">
+            <li class="navbar_menu_item">new</li>
+            <li class="navbar_menu_item">best</li>
+            <li class="navbar_menu_item">outer</li>
+            <li class="navbar_menu_item">knit&cardigan</li>
+            <li class="navbar_menu_item">shirt&blouse</li>
+            <li class="navbar_menu_item">top</li>
+            <li class="navbar_menu_item">ops</li>
+            <li class="navbar_menu_item">pants</li>
+            <li class="navbar_menu_item">skirt</li>
+            <li class="navbar_menu_item">bag</li>
+            <li class="navbar_menu_item">shoes</li>
+            <li class="navbar_menu_item">acc</li>
+        </ul>
+        <div class="navbar_utill">
+            <a href="#" class="navbar_utill_login">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="#" class="navbar_utill_cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart_count">2</span>
+            </a>
+            <a href="#" class="navbar_utill_search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <div class="navbar_utill_list">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="content">
+        <h3>basket</h3>
+        <div class="cart">
+            <div class="item-list">
+                <div class="list_title">
+                    <input type="checkbox" class="allChk">
+                    <span class="img_tit">이미지</span>
+                    <span class="info_tit">상품정보</span>
+                    <span class="quantity_tit">수량</span>
+                    <span class="price_tit">상품구매금액</span>
+                    <span class="discount_tit">할인금액</span>
+                    <span class="point_tit">적립금</span>
+                    <span class="ship_tit">배송구분</span>
+                    <span class="shipPrice_tit">배송비</span>
+                    <span class="choice_tit">선택</span>
+                </div>
+                <div class="list-item">
+                    <input type="checkbox" class="chk" name="itemId" id="itemId">
+                    <span class="img">
+                        <img src="./img/item14.png" alt="">
+                    </span>
+                    <span class="info">
+                        <span class="item-name">울 50% 오블리크 버튼 가디건</span>
+                        <span class="item-opt">[옵션:BEIGE]</span>
+                        <button class="opt-btn">옵션변경</button>
+                    </span>
+                    <span class="quantity">
+                        <div class="choice_cnt">
+                            <div class="input-box">
+                                <button class="num-down">-</button>
+                                <input class="item_quantity" type="text" value="1">
+                                <button class="num-up">+</button>
+                            </div>
+                            <button class="quantity_save">변경</button>
+                        </div>
+                    </span>
+                    <span class="item_price">28,000</span> won
+                    <span class="discount">-</span>
+                    <span class="point">-</span>
+                    <span class="ship">기본배송</span>
+                    <span class="shipPrice">2,500</span> won
+                    <span class="choice">
+                        <button class="choice_order">
+                            주문하기
+                        </button>
+                        <button class="choice-delete">
+                            삭제
+                        </button>
+                    </span>
+                </div>
+                <div class="delete">
+                    <span>선택상품을 </span>
+                    <button class="deleteBtn">삭제하기</button>
+                    <button class="deleteAll">장바구니비우기</button>
+                </div>
+            </div>
+            <div class="total">
+                <div class="total_title">
+                    <span class="totPrice_tit">총 상품금액</span>
+                    <span class="totShip_tit">총 배송비</span>
+                    <span class="finalPrice_tit">결제예정금액</span>
+                </div>
+                <div class="total_price">
+                    <span class="totPrice">28,000 won</span>
+                    <span class="totShip">
+                        + 2,500 won
+                    </span>
+                    <span class="finalPrice">= 30,500 won</span>
+                </div>
+            </div>
+            <div class="order">
+                <div class="order-btn">
+                    <button class="orderAll">전체상품주문</button>
+                    <button class="orderSelec">선택상품주문</button>
+                </div>
+                <button class="goShop">쇼핑계속하기</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="info">
+            <img src="img/logo.png" alt="logo">
+            <div class="info_1">
+                <div class="name">
+                    <span>TRADE NAME 봄샵</span>
+                    <span>MADE BY BOM</span>
+                </div>
+                <span>CALL 010-9964-2461</span>
+                <span>ADDRESS 경기광주 초월읍</span>
+                <span>E-MAIL rlaqhal318@gmail.com</span>
+                <span>GITHUB https://github.com/bom318</span>
+                <span>BLOG https://bombomi.tistory.com/</span>
+            </div>
+            <div class="info_2">
+                <span>
+                    html5, css, javaScript, Springboot, h2 등을 이용해 구현한 쇼핑몰입니다.
+                </span>
+                <span>
+                    쇼핑몰 '커먼유니크'의 디자인을 참고해 만들었습니다.
+                </span>
+            </div>
+        </div>
+        <div class="service">
+            <span class="footer_title">customer service</span>
+            <span class="service_num">
+                1688-0000
+            </span>
+            <span class="service_time">am10:00 - pm5:00 mon-fri</span>
+            <span class="service_time">lunch pm1:00 - 2:00</span>
+        </div>
+        <div class="bank">
+            <span class="footer_title">bank account</span>
+            <span>농협 000-0000-0000-00</span>
+            <span>국민 000000-00-000000</span>
+            <span>(주)봄쇼핑</span>
+        </div>
+        <div class="regal">
+            <span class="footer_title">regal</span>
+            <a href="#">about company</a>
+            <a href="#">terms of use</a>
+            <a href="#">user guide</a>
+            <a href="#">개인정보처리방침</a>
+        </div>
+        <div class="sns">
+            <span class="footer_title">official sns</span>
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+                <span>facebook</span>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@BomShop_official</span>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@BomShop_store</span>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@BomShop_lookbook</span>
+            </a>
+        </div>
+    </footer>
+    <!-- Arrow -->
+    <button class="arrow-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+</body>
+
+</html>
