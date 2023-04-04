@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/cart.css">
+    <script src="./scr/cart.js" defer></script>
 </head>
 
 <body>
@@ -79,7 +80,7 @@
                         <div class="choice_cnt">
                             <div class="input-box">
                                 <button class="num-down">-</button>
-                                <input class="item_quantity" type="text" value="1">
+                                <input class="item_quantity" type="text" value="1" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\\..*)\\./g, '$1');">
                                 <button class="num-up">+</button>
                             </div>
                             <button class="quantity_save">변경</button>
